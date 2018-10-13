@@ -1,0 +1,122 @@
+/* 
+====================================
+Sets up styles for .sidebar-container 
+====================================
+*/
+
+.sidebar-container {
+    background: white;
+    height: 100%;
+    position: fixed;
+    padding: 60px;
+    width: 180px;
+}
+
+nav {
+    top: 0;
+}
+  
+nav a,
+nav h2 {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: josefin sans;
+    line-height: 20px;
+    color: black;
+}
+
+
+/* 
+====================================
+Sets up styles for .content-container 
+====================================
+*/
+
+/* Positions section container in relation to .sidebar-container */
+.section-container {
+    background: white;
+    margin-top: 40px;
+    margin-left: 290px;
+    padding: 30px 30px;
+    height: 100%;
+}
+
+/* Sets max width for content and align content in middle of section-container */
+.content-container {
+    background: white;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+h1 {
+    font-family: north;
+    line-height: 23px;
+}
+
+
+/* Sets row behavior using flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.row-container-no-wrap {
+    width:100%;
+    display:flex; 
+    /* === sets spacing between elements in container === */
+     justify-content: space-between;
+    flex-wrap: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.row-container {
+    width:100%;
+    display:flex; */
+    /* === sets spacing between elements in container === */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px; 
+}
+
+.row-container-around {
+    width:100%;
+    display:flex;
+    /* === sets spacing between elements in container === */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.button-normal {
+border-radius: 4px;
+background-color: #C4BFB1;
+height: 25px;
+}
+
+.button-hover {
+    height: 25px;
+    border-radius: 4px;
+    background-color: #C4BFB1
+}
+
+.button-hover:hover {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    border-radius: 4px;
+    background-color:white;
+}
+
+
+.button-pressed {
+    background-color:#C4BFB1;
+    border-radius: 4px;
+    height: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button-disable {
+    background-color: gray;
+    opacity: 0.6;
+    border-radius: 4px;
+    height: 25px;
+}
